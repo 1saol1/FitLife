@@ -12,7 +12,7 @@ print("Здравствуйте!")
 print("Эта программа рассчитывает ваш индекс массы тела.")
 print("Для корректной работы программы заполните несколько полей")
 
-user_name = input("Введите свое имя: ")
+user_name = (input("Введите свое имя: ")).title()
 user_age = int(input("Введите свой возраст: "))
 user_weight = float(input("Введите вес (кг, например: 60.4): "))
 user_height = float(input("Введите рост (м, например: 1.78): "))
@@ -26,7 +26,7 @@ water_ml = user_weight * WATER_PER_KG
 # Перевод миллилитры в литры
 water_l = water_ml / ML_PER_L
 
-print(f"Отчет для пользователя: {user_name.title()} ({user_age} г.)")
+print(f"Отчет для пользователя: {user_name} ({user_age} г.)")
 print(f"Ваш индекс массы тела: {bmi}")
 print(f"Рекомендуемая норма воды: {water_l} л. в день")
 print("\nРасчет окончен. Будьте здоровы!")
