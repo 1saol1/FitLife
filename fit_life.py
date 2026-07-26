@@ -22,8 +22,11 @@ except ValueError:
     user_age = int(input("Введите возраст полными годами: "))
 
 
-user_weight = float(input("Введите вес (кг, например: 60.4): ").replace(",", "."))
-user_height = float(input("Введите рост (м, например: 1.78): ").replace(",", "."))
+weight = input("Введите вес (кг, например: 60.4): ")
+user_weight = float(weight.replace(",", "."))
+
+height = input("Введите рост (м, например: 1.78): ")
+user_height = float(height.replace(",", "."))
 
 # Рассчёт индекс массы тела с округлением до 1 знака
 bmi = round(user_weight / (user_height ** 2), 1)
